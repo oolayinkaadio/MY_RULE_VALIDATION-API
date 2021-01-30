@@ -21,7 +21,11 @@ app.use(
     })
 );
 
-
+app.get('/', (req, res) => {
+    res.send(200).json({
+        data: 'Welcome to the rule-validation-api'
+    });
+})
 app.use('/', dataRoutes)
 
 // const port = process.env.PORT || 4000;

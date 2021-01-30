@@ -24,9 +24,9 @@ app.use(
 
 app.use('/', dataRoutes)
 
-const port = 4000;
+// const port = process.env.PORT || 4000;
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(`
-        App listening on port ${port}!`);
+        App listening on port 4000!`);
 });

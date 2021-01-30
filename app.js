@@ -22,7 +22,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-    res.send(200).json({
+    return res.send(200).json({
         data: 'Welcome to the rule-validation-api'
     });
 })

@@ -6,6 +6,11 @@ const {
 } = express;
 
 const router = Router();
+router.get('/', (req, res) => {
+    res.send(200).json({
+        data: 'Welcome'
+    })
+})
 router.get('/data', dataController.getData);
 router.post('/validate', dataController.validateData);
 

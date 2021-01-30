@@ -22,7 +22,7 @@ app.use(
 );
 
 
-app.use('/api', dataRoutes);
+app.use(dataRoutes);
 // app.get('/', (req, res) => {
 //     return res.send(200).json({
 //         data: 'Welcome to the rule-validation-api'
